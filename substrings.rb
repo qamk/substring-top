@@ -15,6 +15,7 @@ def substrings(reference,dictionary)
   end
   
   puts "computed.....\n#{reference}\nresult.....\n#{result}"
+  return result
 
 end
 
@@ -29,4 +30,4 @@ add_to_dictionary.each {|word| dictionary.push(word.downcase)}
 print "#{dictionary}\n"
 puts "Enter your reference string:"
 reference = gets.chomp
-substrings(reference,dictionary)
+valid_substrings = substrings(reference,dictionary)
